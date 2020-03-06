@@ -19,6 +19,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/major"
+                    app:layout_constraintStart_toEndOf="@+id/seekBar"
+                    tools:layout_editor_absoluteY="416dp" />
+
                 <ImageView
 
                     android:id="@+id/profile"
@@ -84,7 +95,7 @@
 
                 <SeekBar
                     android:id="@+id/seekBar"
-                    android:layout_width="310dp"
+                    android:layout_width="286dp"
                     android:layout_height="15dp"
                     android:layout_marginTop="27dp"
                     app:layout_constraintEnd_toEndOf="@+id/major"
@@ -118,7 +129,7 @@
                     app:layout_constraintVertical_bias="1.0" />
 
                 <Button
-                    android:id="@+id/button_save"
+                    android:id="@+id/ "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -127,6 +138,17 @@
                     app:layout_constraintHorizontal_bias="0.501"
                     app:layout_constraintStart_toStartOf="@+id/editText2"
                     app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-5"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/seekBar"
+                    app:layout_constraintStart_toStartOf="@+id/major"
+                    tools:layout_editor_absoluteY="416dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

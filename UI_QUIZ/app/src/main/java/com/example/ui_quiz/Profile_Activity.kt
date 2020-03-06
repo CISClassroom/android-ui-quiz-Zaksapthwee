@@ -2,13 +2,17 @@ package com.example.ui_quiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 
 class Profile_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (supportActionBar != null)
+            supportActionBar?.hide()
         setContentView(R.layout.activity_profile)
         val bundle = intent.extras
 
@@ -30,5 +34,10 @@ class Profile_Activity : AppCompatActivity() {
         namestudent.text = get_name_student
         idstudent.text = get_idstudent
         major.text = get_major
+
+        val Btn_save = findViewById<Button>(R.id.button_save)
+            Btn_save.setOnClickListener {
+                finish()
+            }
     }
 }

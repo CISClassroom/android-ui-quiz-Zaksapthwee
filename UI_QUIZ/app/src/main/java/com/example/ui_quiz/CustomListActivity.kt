@@ -187,6 +187,7 @@ class CustomListActivity : AppCompatActivity() {
             R.drawable.w))
         Log.i("tag",Students.toString())
 
+
         var  listView :ListView = findViewById(R.id.Listview) //listview
         listView.adapter = StudentAdapter(this,R.layout.listitem_student,liststudent)
         Listview.setOnItemClickListener { parent: AdapterView<*>, view: View, position:Int, id ->
@@ -200,7 +201,7 @@ class CustomListActivity : AppCompatActivity() {
 
             //Toast the Values
             Toast.makeText(this,
-                "Facebook :" +liststudent[position].idstudent+"\nProfile :  "+liststudent[position].name, Toast.LENGTH_SHORT).show()
+                "รหัสนักศึกษา :" +liststudent[position].idstudent+"\nชื่อ :  "+liststudent[position].name, Toast.LENGTH_SHORT).show()
 
             //Intent
             var profile = Intent(this,Profile_Activity::class.java)
@@ -210,6 +211,9 @@ class CustomListActivity : AppCompatActivity() {
             profile.putExtra("icon",icon)
             startActivity(profile)
             Log.i("tag",profile.toString())
+
+
+
 
         }
     }
