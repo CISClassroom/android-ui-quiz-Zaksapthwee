@@ -101,7 +101,7 @@ class CustomListActivity : AppCompatActivity() {
             "นางสาวศศิธร พิมมะทา",
             "603410156-1",
             "สาขา วิทยาการคอมพิวเตอร์และสารสนเทศ",
-            R.drawable.m))
+            R.drawable.w))
         liststudent.add(Students(
             "นายสุรพร อินพิลึก",
             "603410157-9",
@@ -129,7 +129,7 @@ class CustomListActivity : AppCompatActivity() {
             "นางสาวธิดารัตน์ ดานะพันธ์",
             "603410204-6",
             "สาขา วิทยาการคอมพิวเตอร์และสารสนเทศ",
-            R.drawable.m))
+            R.drawable.w))
         liststudent.add(Students(
             "นายปิยทัศน์ นวกิจวัฒนา",
             "603410208-8",
